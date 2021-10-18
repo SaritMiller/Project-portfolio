@@ -9,7 +9,27 @@
   </head>
 
   <body>
-    <div class="section-1" id="home">
+
+    <!-- <div>
+    <div class="spine" visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);></div>
+    <div class="spine-target">
+      <div class="circle" visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); background-color: rgb(89, 24, 223);></div>
+      <div class="pulse" visibility: hidden; opacity: 0; transform: matrix(8, 0, 0, 8, 0, 0);></div>
+    </div>
+    </div>
+
+    </div> -->
+<!-- 
+    <div class="timeline">
+      <div class="timeline-line">
+        <span class="timeline-innerline">
+          <span class="timeline-point">
+          </span>
+        </span>
+      </div>
+    </div> -->
+      
+    <div class="section-1 section" id="home">
       <nav class="nav">
         <div class="menu-bar">
               <label for="toggle">&#9776;</label>
@@ -18,8 +38,8 @@
           <ul class="nav-btns">
             <li><a class="nav-links" href="#">home</a></li>
             <li><a class="nav-links" href="#about">about</a></li>
-            <li><a class="nav-links" href="#">resume</a></li>
-            <li><a class="nav-links" href="#">projects</a></li>
+            <li><a class="nav-links" href="#resume">resume</a></li>
+            <li><a class="nav-links" href="#projects">projects</a></li>
             <li><a class="nav-links" href="#">contact</a></li>
           </ul>
         </div>
@@ -31,7 +51,7 @@
       </div>
     </div>
 
-    <div class="section-2" id="about">
+    <div class="section-2 section" id="about">
 
       <div class="background-animation">
         <svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%">
@@ -51,35 +71,170 @@
 
       <div class="container-2">
 
+        <div class="image-container">
+          <img class="about-img" src="/project.portfolio/about me-img-.png">
+        </div>
+
         <div class="about-container">
-        <h1 class="title-2">ABOUT ME</h1>
-        <div class="text">
+        <!-- <h1 class="title-2">ABOUT ME</h1> -->
+        <span class="text-decor">< p class = "About me" ></span>
+        <span class="text-decor-2"><div class="text">
           My name is Sarit, and my journey to web development started by having <span class="highlight">creative ideas</span> for websites and applications, 
           I am a fast learner, determined and diligent. 
           Through my combat military service I have gained <span class="highlight">qualities</span> that has shaped who I am, hard working, 
           facing challenges, responsibile, disciplined, well-time managed, working under pressure, and the value of working in a team.
           I am creative and always strive to <span class="highlight">perfect my skills</span> to excellency.
         </div>
-      </div>
-      <div class="image-container">
-        <!-- <img class="about-img" src="/project.portfolio/about me-img.png"> -->
+        <span class="text-decor">< / p ></span>
+      </span>
       </div>
 
 
       <!-- about container - media query-->
       <div class="about-container-media">
-        <h1 class="title-2-media">ABOUT ME</h1>
         <div class="text-media">
+          
+          <span class="text-decor">< p class = "About me" ></span>
           My name is Sarit, and my journey to web development started by having <span class="highlight">creative ideas</span> for websites and applications, 
           I am a fast learner, determined and diligent. My <span class="highlight">qualities</span> are hard working, 
           facing challenges, responsibile, disciplined, well-time managed, working under pressure, and I value working in a team.
-          I am creative and always strive to <span class="highlight">perfect my skills</span> to excellency.
+          I am creative and always strive to <span class="highlight">perfect my skills</span> to excellency. 
+          <span class="text-decor">< / p ></span>
+        </div>
+
+        <div class="image-container-media">
+          <img class="about-img-media" src="/project.portfolio/about me-img-.png">
         </div>
       </div>
       
       </div>
+
     </div>
+    </div>
+
+
+
+  <div class="section-3 section" id="resume">
+    <div class="container-3">
+      
+
+      <div class="resume-nav">
+      <button class="btn active" data-tab-target="#web-dev">Web development</button>
+      <button class="btn" data-tab-target="#skills">Additional skills</button>
+      <button class="btn" data-tab-target="#education">Education & experience</button>
+      <button class="btn" data-tab-target="#cv">Download CV</button>
+      </div>
+
+     <div id="web-dev" data-tab-content class="active"> 
+      <h5 class="resume__header">
+        Web development
+      </h5>
+        <ul id="coding-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      <p class="resume-text">
+        From my  first words "Hello world" on HTML, I found myself loving the web world. 
+        Through eagrness and my diligence in studying I have gained knowledge of front-end development in a short amount of time, and found a challenging way to express my creativity.
+        I have high work ethic, and value orginization in building my projects. 
+        My personal projects and the applications I programmed can be found and reviewed on my GitHub profile.
+      </p>
+      <ul id="tools-list">
+        <li id="highlight-tools">< Tools ></li>
+        <li>Visual Studio Code,</li>
+        <li>Git/github,</li>
+        <!-- <li>WordPress,</li> -->
+        <li>Figma</li>
+        <li id="highlight-tools">< / tools ></li>
+      </ul>
+      </div>
+
+
+      <div id="skills" data-tab-content>
+      <h5 class="resume__header">
+        Additional skills
+      </h5>
+      <p class="resume-text"> 
+        My additional skills are writing, photography and social media. Writing comes natural to me and I have always been passionate about writing and putting ideas,
+        stories and products into words. I see writing as a necessary tool for any successful project and production.
+        I also find myself being drawn to Photography and social media where my creativity can be expressed.
+         I hope my additional skills can assist and possibly be beneficial for the job.
+      </p>
+      </div>
+
+      <div id="education" data-tab-content>
+      <h5 class="resume__header">
+        Education & experience
+      </h5>
+        <div class="list-1">
+        <ul id="education-list">
+          <li>Ziv & Marks: High school education</li>
+          <li>Udey JavaScript</li>
+          <li>FreeCodeCamp course</li>
+          <li>Additional high school programs: 5 points English, 5 points Literature and
+            writing, art.</li>  
+        </ul>
+      </div>
+      <div class="list-2">
+        <ul id="experience-list">
+          <li>Article writer in “Word of Life” missions’ global magazine.</li>
+          <li>Freelance work: translated court documents from Hebrew to English for a lawsuit</li>
+          <li>Knowledge and personal work of copy-writing, micro-copy, and UX writing.</li>
+          <li>Currently writing theological book for youth.</li>  
+        </ul>
+      </div>
+      </p>
+      </div>
+
+      <div id="cv" data-tab-content>
+      <h5 class="resume__header">
+        Download my CV:
+      </h5>
+      <p class="resume-text">
+        <div class="download-cv">
+          <button id="download">
+        <a class="btn btn-cv" href="/project.portfolio/Sarit-Rose-Roytman-CV-_ copy.pdf" title="" download>CV</a>
+        <button id="download-letter">
+          <a class="btn btn-cv" href="/project.portfolio/Sarit-Rose-Roytman-web-development_-_personlig brev copy.pdf" title="" download>Cover Letter</a>
+      </button>
+      </div>
+      </p>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+
+  <div class="section-4 section" id="projects">
+    <div class="container-4">
+      <div class="text-header-4">Projects</div>
+      <div class="projetcs-img">
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- <div class="section-1 section" id="home">
+    <nav class="nav">
+      <div class="menu-bar">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle">
+            <div class="menu">
+        <ul class="nav-btns">
+          <li><a class="nav-links" href="#"> < home ></a></li>
+          <li><a class="nav-links" href="#about">< about ></a></li>
+          <li><a class="nav-links" href="#resume">< resume ></a></li>
+          <li><a class="nav-links" href="#projects">< projects ></a></li>
+          <li><a class="nav-links" href="#">< contact ></a></li>
+        </ul>
+      </div>
+    </nav> -->
+
   </body>
+  
 
   
 
